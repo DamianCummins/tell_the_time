@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TJBot Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    function refresh() {
+        $.getJSON('/tjbot/status',
+            function(response) {
+                $('#status').empty().append(response.message);
+            });
+    };
+    
+    function pause() {
+        // Send the request
+        $.post('/tjbot/pause', {}, function(response) {
+           $('#status').empty().append(response.message);
+           alert("TJBot is snoozing... Zzz");
+        }, 'json');
+    };
+
+    function resume() {
+        // Send the request
+        $.post('/tjbot/resume', {}, function(response) {
+           $('#status').empty().append(response.message);
+           alert("TJBot woke up!");
+        }, 'json');
+    };
+
+    refresh();
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>TJBot Monitor</h1>
+            <p>Current status of TJBot:</p><p id="status"></p>
+        </div>
+        <div class="container text-center col-sm-12">
+            <div type="button" class="btn btn-block btn-info" onclick="refresh()">Refresh</div><br/>
+            <div type="button" class="btn btn-block btn-warning" onclick="pause()">Let TJBot snooze</div><br/>
+            <div type="button" class="btn btn-block btn-success" onclick="resume()">Wake TJBot up</div>
+        </div>
+    </div>
+    
+</body>
+</html>

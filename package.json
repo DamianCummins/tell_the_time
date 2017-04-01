@@ -1,0 +1,23 @@
+{
+  "name": "tell_the_time",
+  "version": "1.0.0",
+  "description": "TJ Bot Tell the Time recipe",
+  "main": "tellTheTime.js",
+  "scripts": {
+    "start": "node tell thE time.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git@github.com:DamianCummins/tell_the_time.git"
+  },
+  "author": "Damian Cummins",
+  "dependencies": {
+    "tjbot": "latest",
+    "fast-csv": "latest",
+    "express": "^4.13.3",
+    "body-parser": "~1.0.1"
+  }
+}
+
+

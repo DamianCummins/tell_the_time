@@ -1,0 +1,1355 @@
+{
+   "name": "Tell The Time",
+   "created": "2017-01-07T11:47:02.296Z",
+   "intents": [
+      {
+         "intent": "help",
+         "created": "2017-03-21T22:22:59.011Z",
+         "updated": "2017-03-21T22:26:30.488Z",
+         "examples": [
+            {
+               "text": "Are you able to help me?",
+               "created": "2017-03-21T22:26:30.488Z",
+               "updated": "2017-03-21T22:26:30.488Z"
+            },
+            {
+               "text": "I'm not sure what to ask",
+               "created": "2017-03-21T22:25:17.688Z",
+               "updated": "2017-03-21T22:25:17.688Z"
+            },
+            {
+               "text": "I need some help",
+               "created": "2017-03-21T22:24:57.072Z",
+               "updated": "2017-03-21T22:24:57.072Z"
+            },
+            {
+               "text": "What can you do?",
+               "created": "2017-03-21T22:24:47.868Z",
+               "updated": "2017-03-21T22:24:47.868Z"
+            },
+            {
+               "text": "What service do you offer?",
+               "created": "2017-03-21T22:25:47.830Z",
+               "updated": "2017-03-21T22:25:47.830Z"
+            }
+         ],
+         "description": null
+      },
+      {
+         "intent": "tellTheTime",
+         "created": "2017-03-17T22:18:20.102Z",
+         "updated": "2017-03-23T18:42:21.539Z",
+         "examples": [
+            {
+               "text": "Do you have the time?",
+               "created": "2017-03-17T22:18:20.102Z",
+               "updated": "2017-03-17T22:18:20.102Z"
+            },
+            {
+               "text": "Do you know what the time is?",
+               "created": "2017-03-17T22:18:20.102Z",
+               "updated": "2017-03-17T22:18:20.102Z"
+            },
+            {
+               "text": "Tell me the time",
+               "created": "2017-03-17T22:18:20.102Z",
+               "updated": "2017-03-17T22:18:20.102Z"
+            },
+            {
+               "text": "What hour is it?",
+               "created": "2017-03-17T22:18:20.102Z",
+               "updated": "2017-03-17T22:18:20.102Z"
+            },
+            {
+               "text": "What time is it?",
+               "created": "2017-03-17T22:18:20.102Z",
+               "updated": "2017-03-17T22:18:20.102Z"
+            },
+            {
+               "text": "What time is it in Berlin?",
+               "created": "2017-03-23T18:42:21.539Z",
+               "updated": "2017-03-23T18:42:21.539Z"
+            }
+         ],
+         "description": null
+      },
+      {
+         "intent": "thanks",
+         "created": "2017-03-19T20:00:51.229Z",
+         "updated": "2017-03-19T20:03:00.466Z",
+         "examples": [
+            {
+               "text": "Cheers",
+               "created": "2017-03-19T20:01:56.008Z",
+               "updated": "2017-03-19T20:01:56.008Z"
+            },
+            {
+               "text": "Cheers watson",
+               "created": "2017-03-19T20:03:00.466Z",
+               "updated": "2017-03-19T20:03:00.466Z"
+            },
+            {
+               "text": "Nice one",
+               "created": "2017-03-19T20:02:11.134Z",
+               "updated": "2017-03-19T20:02:11.134Z"
+            },
+            {
+               "text": "Ta",
+               "created": "2017-03-19T20:02:01.108Z",
+               "updated": "2017-03-19T20:02:01.108Z"
+            },
+            {
+               "text": "Thanks",
+               "created": "2017-03-19T20:01:44.437Z",
+               "updated": "2017-03-19T20:01:44.437Z"
+            },
+            {
+               "text": "Thanks watson",
+               "created": "2017-03-19T20:02:37.442Z",
+               "updated": "2017-03-19T20:02:37.442Z"
+            },
+            {
+               "text": "Thank you",
+               "created": "2017-03-19T20:01:51.477Z",
+               "updated": "2017-03-19T20:01:51.477Z"
+            }
+         ],
+         "description": null
+      }
+   ],
+   "updated": "2017-03-28T10:46:05.578Z",
+   "entities": [
+      {
+         "type": null,
+         "entity": "city",
+         "source": null,
+         "values": [
+            {
+               "value": "Dubai",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Detroit",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Hong Kong",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Luxembourg",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Madrid",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Singapore",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Shanghai",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Cairo",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Athens",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Sydney",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Toronto",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Buenos Aires",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Berlin",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Vienna",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Johannesburg",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Bucharest",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Paris",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Monaco",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Budapest",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Havana",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Tokyo",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Los Angeles",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Chicago",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "New York",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Brussels",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Warsaw",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Minsk",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Istanbul",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Jerusalem",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Moscow",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Tbilisi",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Maldives",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Bangkok",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Auckland",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Rome",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Zurich",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Prague",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "London",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Guam",
+               "synonyms": [],
+               "metadata": null
+            },
+            {
+               "value": "Amsterdam",
+               "synonyms": [],
+               "metadata": null
+            }
+         ],
+         "created": "2017-03-21T22:42:39.902Z",
+         "updated": "2017-03-21T22:42:39.902Z",
+         "open_list": false,
+         "description": null
+      }
+   ],
+   "language": "en",
+   "metadata": {
+      "runtime_version": null
+   },
+   "description": null,
+   "dialog_nodes": [
+      {
+         "go_to": null,
+         "output": {},
+         "parent": null,
+         "context": null,
+         "created": "2017-03-21T22:22:38.303Z",
+         "updated": "2017-03-23T22:55:13.717Z",
+         "metadata": null,
+         "conditions": "#help",
+         "description": null,
+         "dialog_node": "Help",
+         "previous_sibling": "Tell the Time"
+      },
+      {
+         "go_to": null,
+         "output": {},
+         "parent": null,
+         "context": null,
+         "created": "2017-03-23T18:35:13.991Z",
+         "updated": "2017-03-23T18:48:17.183Z",
+         "metadata": null,
+         "conditions": "#tellTheTime",
+         "description": null,
+         "dialog_node": "Tell the Time",
+         "previous_sibling": null
+      },
+      {
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "Sorry I didn't quite get that",
+                  "would you repeat that for me please"
+               ],
+               "selection_policy": "random"
+            }
+         },
+         "parent": null,
+         "context": null,
+         "created": "2017-03-17T23:13:52.310Z",
+         "updated": "2017-03-23T22:56:19.118Z",
+         "metadata": null,
+         "conditions": "anything_else",
+         "description": null,
+         "dialog_node": "Anything else",
+         "previous_sibling": "Thanks"
+      },
+      {
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "No problem!",
+                  "No worries!",
+                  "You're welcome!",
+                  "That's perfectly alright!",
+                  "Any time"
+               ],
+               "selection_policy": "random"
+            }
+         },
+         "parent": null,
+         "context": null,
+         "created": "2017-03-19T20:00:26.405Z",
+         "updated": "2017-03-23T22:56:56.990Z",
+         "metadata": null,
+         "conditions": "#thanks",
+         "description": null,
+         "dialog_node": "Thanks",
+         "previous_sibling": "Help"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "It is currently todays_date"
+               ],
+               "selection_policy": "sequential"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "created": "2017-03-23T18:36:42.967Z",
+         "updated": "2017-03-23T18:38:56.908Z",
+         "metadata": null,
+         "conditions": " !@city",
+         "description": null,
+         "dialog_node": "node_3_1490294223086",
+         "previous_sibling": null
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 14400,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Dubai",
+         "description": null,
+         "dialog_node": "dialog_node_0",
+         "previous_sibling": "node_3_1490294223086"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -18000,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Detroit",
+         "description": null,
+         "dialog_node": "dialog_node_1",
+         "previous_sibling": "dialog_node_0"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 28800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:(Hong Kong)",
+         "description": null,
+         "dialog_node": "dialog_node_2",
+         "previous_sibling": "dialog_node_1"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 10800,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Luxembourg",
+         "description": null,
+         "dialog_node": "dialog_node_3",
+         "previous_sibling": "dialog_node_2"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 10800,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Madrid",
+         "description": null,
+         "dialog_node": "dialog_node_4",
+         "previous_sibling": "dialog_node_3"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 28800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Singapore",
+         "description": null,
+         "dialog_node": "dialog_node_5",
+         "previous_sibling": "dialog_node_4"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 28800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Shanghai",
+         "description": null,
+         "dialog_node": "dialog_node_6",
+         "previous_sibling": "dialog_node_5"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 7200,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Cairo",
+         "description": null,
+         "dialog_node": "dialog_node_7",
+         "previous_sibling": "dialog_node_6"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 7200,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Athens",
+         "description": null,
+         "dialog_node": "dialog_node_8",
+         "previous_sibling": "dialog_node_7"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 36000,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Sydney",
+         "description": null,
+         "dialog_node": "dialog_node_9",
+         "previous_sibling": "dialog_node_8"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -18000,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Toronto",
+         "description": null,
+         "dialog_node": "dialog_node_10",
+         "previous_sibling": "dialog_node_9"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -10800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:(Buenos Aires)",
+         "description": null,
+         "dialog_node": "dialog_node_11",
+         "previous_sibling": "dialog_node_10"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Berlin",
+         "description": null,
+         "dialog_node": "dialog_node_12",
+         "previous_sibling": "dialog_node_11"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Vienna",
+         "description": null,
+         "dialog_node": "dialog_node_13",
+         "previous_sibling": "dialog_node_12"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 7200,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Johannesburg",
+         "description": null,
+         "dialog_node": "dialog_node_14",
+         "previous_sibling": "dialog_node_13"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 7200,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Bucharest",
+         "description": null,
+         "dialog_node": "dialog_node_15",
+         "previous_sibling": "dialog_node_14"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Paris",
+         "description": null,
+         "dialog_node": "dialog_node_16",
+         "previous_sibling": "dialog_node_15"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Monaco",
+         "description": null,
+         "dialog_node": "dialog_node_17",
+         "previous_sibling": "dialog_node_16"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Budapest",
+         "description": null,
+         "dialog_node": "dialog_node_18",
+         "previous_sibling": "dialog_node_17"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -18000,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Havana",
+         "description": null,
+         "dialog_node": "dialog_node_19",
+         "previous_sibling": "dialog_node_18"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 32400,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Tokyo",
+         "description": null,
+         "dialog_node": "dialog_node_20",
+         "previous_sibling": "dialog_node_19"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -28800,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:(Los Angeles)",
+         "description": null,
+         "dialog_node": "dialog_node_21",
+         "previous_sibling": "dialog_node_20"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -21600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Chicago",
+         "description": null,
+         "dialog_node": "dialog_node_22",
+         "previous_sibling": "dialog_node_21"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": -18000,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:(New York)",
+         "description": null,
+         "dialog_node": "dialog_node_23",
+         "previous_sibling": "dialog_node_22"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Brussels",
+         "description": null,
+         "dialog_node": "dialog_node_24",
+         "previous_sibling": "dialog_node_23"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Warsaw",
+         "description": null,
+         "dialog_node": "dialog_node_25",
+         "previous_sibling": "dialog_node_24"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 10800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Minsk",
+         "description": null,
+         "dialog_node": "dialog_node_26",
+         "previous_sibling": "dialog_node_25"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 10800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Istanbul",
+         "description": null,
+         "dialog_node": "dialog_node_27",
+         "previous_sibling": "dialog_node_26"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 7200,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Jerusalem",
+         "description": null,
+         "dialog_node": "dialog_node_28",
+         "previous_sibling": "dialog_node_27"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 10800,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Moscow",
+         "description": null,
+         "dialog_node": "dialog_node_29",
+         "previous_sibling": "dialog_node_28"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 14400,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Tbilisi",
+         "description": null,
+         "dialog_node": "dialog_node_30",
+         "previous_sibling": "dialog_node_29"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 18000,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Maldives",
+         "description": null,
+         "dialog_node": "dialog_node_31",
+         "previous_sibling": "dialog_node_30"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 25200,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Bangkok",
+         "description": null,
+         "dialog_node": "dialog_node_32",
+         "previous_sibling": "dialog_node_31"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 43200,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Auckland",
+         "description": null,
+         "dialog_node": "dialog_node_33",
+         "previous_sibling": "dialog_node_32"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Rome",
+         "description": null,
+         "dialog_node": "dialog_node_34",
+         "previous_sibling": "dialog_node_33"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Zurich",
+         "description": null,
+         "dialog_node": "dialog_node_35",
+         "previous_sibling": "dialog_node_34"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Prague",
+         "description": null,
+         "dialog_node": "dialog_node_36",
+         "previous_sibling": "dialog_node_35"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 0,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:London",
+         "description": null,
+         "dialog_node": "dialog_node_37",
+         "previous_sibling": "dialog_node_36"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 36000,
+               "dst": "0"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Guam",
+         "description": null,
+         "dialog_node": "dialog_node_38",
+         "previous_sibling": "dialog_node_37"
+      },
+      {
+         "type": "response_condition",
+         "go_to": null,
+         "output": {
+            "text": {
+               "values": [
+                  "The time in @city is todays_date"
+               ],
+               "selection_policy": "sequential"
+            },
+            "context": {
+               "timezoneOffset": 3600,
+               "dst": "1"
+            }
+         },
+         "parent": "Tell the Time",
+         "context": null,
+         "metadata": null,
+         "conditions": " @city:Amsterdam",
+         "description": null,
+         "dialog_node": "dialog_node_39",
+         "previous_sibling": "dialog_node_38"
+      }
+   ],
+   "workspace_id": "24936c3c-d834-4006-83db-679b16ab754b",
+   "counterexamples": []
+}
