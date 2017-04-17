@@ -73,6 +73,39 @@ var tellTheTime = function() {
       });
     };
 
+    var tellTheTime = function(response, callback) {
+        responseString = "";
+
+        // create Date object for current location
+        d = new Date();
+
+        // convert to msec
+        // add local time zone offset
+        // get UTC time in msec
+        utc = d.getTime();
+        nd = d;
+        console.log(response.object.output.text[0]);
+        if (response.object.output.context != undefined) {
+           dstHourSecs = 0;
+           if (response.object.output.context.dst === "1") {
+                dstHourSecs = 3600;
+            }
+            offsetSecs = dstHourSecs + response.object.output.context.timezoneOffset;
+            offset = offsetSecs * 1000;
+            console.log(offset);
+            // create new Date object for different city
+            // using supplied offset
+            nd = new Date(utc + offset);
+            isoString = nd.toISOString();
+            time = isoString.substring(isoString.indexOf("T")+1, isoString.indexOf("."));
+            console.log(time);
+            responseString = response.object.output.text[0].replace("todays_date", time);
+        } else {
+            responseString = response.object.output.text[0].replace("todays_date", nd.toLocaleTimeString());
+        }
+        callback(responseString);
+    };
+
     return {
         "start": function() {
 
@@ -114,41 +147,15 @@ var tellTheTime = function() {
                         }
                         
                         if (intent === "tellTheTime") {
-                            responseString = "";
-                            
-                            // create Date object for current location
-                            d = new Date();
-
-                            // convert to msec
-                            // add local time zone offset
-                            // get UTC time in msec
-                            utc = d.getTime();
-                            nd = d;
-                            console.log(response.object.output.text[0]);
-                            if (response.object.output.context != undefined) {
-                                dstHourSecs = 0;
-                                if (response.object.output.context.dst === "1") {
-                                    dstHourSecs = 3600;
-                                }
-                                offsetSecs = dstHourSecs + response.object.output.context.timezoneOffset;
-                                offset = offsetSecs * 1000;
-                                console.log(offset);
-                                // create new Date object for different city
-                                // using supplied offset
-                                nd = new Date(utc + offset);
-                                isoString = nd.toISOString();
-                                time = isoString.substring(isoString.indexOf("T")+1, isoString.indexOf("."));
-                                console.log(time);
-                                responseString = response.object.output.text[0].replace("todays_date", time);
-                            } else {
-                                responseString = response.object.output.text[0].replace("todays_date", nd.toLocaleTimeString());
-                            }
-               
-                            //Replace date token with Time string
-                            response.object.output.text[0] = responseString;
+                            tellTheTime(response, function(responseString) {
+                               //Replace date token with Time string
+                               response.object.output.text[0] = responseString;
+                               tj.speak(response.object.output.text[0]);
+                            });
+                        } else {
+                            // speak the result
+                            tj.speak(response.object.output.text[0]);
                         }
-                        // speak the result
-                        tj.speak(response.object.output.text[0]);
                     });
                 }
             });
