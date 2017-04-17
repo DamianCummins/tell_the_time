@@ -60,6 +60,11 @@ var tellTheTime = function() {
       return callback();
     };
 
+    var resume = function(callback) {
+      tj.speak("Hi Everyone, what did I miss?");
+      return callback();
+    };
+
     var understood = function() {
       var create_audio = exec('aplay '+audioDir+'understood.wav', function (error, stdout, stderr) {
         if (error !== null) {
@@ -71,7 +76,7 @@ var tellTheTime = function() {
     return {
         "start": function() {
 
-            micStopped = false;
+            stopped = false;
             console.log(tj.configuration.robot.name +" is listening, you may speak now.");
             console.log("Try saying, \"" + tj.configuration.robot.name + ", what time is it in Tokyo?\"");
             
@@ -79,7 +84,15 @@ var tellTheTime = function() {
 
             // listen for utterances with our attentionWord and send the result to
             // the Conversation service
-            tj.listen(function(msg) {
+            tj.listen(function(msg, err) {
+                if (err) {
+                    console.log(err);
+                    internalError(function() {
+                        tj = new TJBot(hardware, tjConfig, credentials);
+                        stopped = true;
+                        return;
+                    });
+                }
                 // check to see if they are talking to TJBot
                 if (tj.configuration.robot.homophones.some(function(v) { return msg.toLowerCase().indexOf(v.toLowerCase()) >= 0; })) {
                     understood();
@@ -145,6 +158,15 @@ var tellTheTime = function() {
                 stop(function() {
                     tj.stopListening();
                     stopped = true;
+                    return callback();
+                });
+            }
+        },
+        "resume": function(callback) {
+            if (stopped) {
+                resume(function() {
+                    tj.resumeListening();
+                    stopped = false;
                     return callback();
                 });
             }

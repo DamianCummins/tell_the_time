@@ -27,7 +27,7 @@ router.get("/", function(req, res) {
 
 router.route("/status")
    .get(function(req, res) {
-      tellTheTime.isMicStopped(function(status) {
+      tellTheTime.isStopped(function(status) {
           if (status) {
               res.json({'message':'SNOOZING'});
           } else {
@@ -39,7 +39,7 @@ router.route("/status")
 
 router.route("/pause")
    .post(function(req, res) {
-      tellTheTime.pause(function(err) {
+      tellTheTime.stop(function(err) {
          if (!err) {
             res.json({'message':'SNOOZING'});
          }
@@ -49,7 +49,7 @@ router.route("/pause")
 router.route("/resume")
    .post(function(req, res) {
       tellTheTime.start();
-      tellTheTime.isMicStopped(function(status) {
+      tellTheTime.isStopped(function(status) {
           if (status) {
               res.json({'message':'SNOOZING'});
           } else {
